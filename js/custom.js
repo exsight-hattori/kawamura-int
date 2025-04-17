@@ -21,32 +21,12 @@ $(function(){
   });
 
 
-
-//   header blur
-
-// jQuery( window ).on( 'scroll', function() {
-//   if ( 50 < jQuery( this ).scrollTop() ) { 
-//     jQuery( '.navbar-fixed-top' ).addClass( 'headerBlurScroll' );
-//   } else {
-//     jQuery( '.navbar-fixed-top' ).removeClass( 'headerBlurScroll' );
-//   }
-// });
-
-// jQuery( window ).on( 'scroll', function() {
-//   if ( 1000 < jQuery( this ).scrollTop() ) { 
-//     jQuery( '.nav-text' ).addClass( 'headerBlurScroll' );
-//   } else {
-//     jQuery( '.nav-text' ).removeClass( 'headerBlurScroll' );
-//   }
-// });
-
-
 // ヘッダーの高さを取得してその分コンテンツを下げる
 $(function() {
 
     $('a[href^="#"]').click(function() {
       var speed = 500;
-      var adjust = $('header').height();
+      var adjust = $('header').height() + 20;
       var href = $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
       var position = target.offset().top - adjust;
@@ -56,3 +36,17 @@ $(function() {
     });
   
   });
+
+
+// cookie取得して１度のみPOPUP
+
+if($.cookie("disappear") != "ok"){
+    $(".popup").removeClass("ok");
+} else {
+    $(".popup").addClass("ok");
+}
+
+$('#popupBtn').click(function(){
+    $.cookie("disappear", "ok", { expires: 1, path: "/" });
+    $(".popup").addClass("ok");
+});

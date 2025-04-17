@@ -12,6 +12,14 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZMH27Y1WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XZMH27Y1WM');
+</script>
 
 <!-- jquery CDN -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -28,22 +36,24 @@
 
 
 <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 
 </head>
 <body>
     <div id="top-image-name"></div>
     <div id="page-top" class="ccm-page ccm-page-id-1 page-template-home seren-c5wrap">
-        <header class="navbar navbar-expand-lg fixed-top" role="navigation">
+        <header class="navbar navbar-expand-xl fixed-top" role="navigation">
             <div id="seren-masthead">
                 <div class="container-fluid">
                     <div class="row">
-                        <div id="seren-masthead-right" class="col-0 col-lg-12 order-2">
+                        <div id="seren-masthead-right" class="col-0 col-xl-12 order-2">
                             <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                        <div id="site-logo-area" class="col-9 col-lg-12 order-1">
+                        <div id="site-logo-area" class="col-9 col-xl-12 order-1">
                             <div class="d-flex align-items-center">
                                 <h1 id="site-logo">
                                     <a href="index.html">
@@ -55,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,7 +76,7 @@
                             <span class="nav-schedule">9:00～12:00/17:00～19:30　水曜土曜午後休診、日曜祝日休診</span>
                             <div class="header-btn-wrap">
                                 <a href="tel:0774416259" class="header-btn-phone_pc">
-                                    <i class="fas fa-phone-alt me-2"></i>0774-41-6259</a>
+                                    <i class="fas fa-phone-alt me-1"></i>0774-41-6259</a>
                             </div>
                         </div>
                         <ul class="navbar-nav">
@@ -82,13 +92,19 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="access.html">診療時間・アクセス</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="info.html">お知らせ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="howto-reserve.html">WEB予約方法</a>
+                            </li>
                             <li class="header-btn-wrap">
                                 <a href="https://junnavi.com/takenaka/" target="_blank" class="header-btn-web">
                                     <i class="fas fa-calendar-alt me-2"></i>WEB予約</a>
                             </li>
                             <li class="header-btn-wrap">
                                 <a href="tel:0774416259" class="header-btn-phone_sp">
-                                    <i class="fas fa-phone-alt me-2"></i>0774-41-6259</a>
+                                    <i class="fas fa-phone-alt me-1"></i>0774-41-6259</a>
                             </li>
                         </ul>
                     </div>
@@ -104,97 +120,467 @@
             </section>
             <section id="treatments">
                 <div class="container">
-                    <div class="row align-items-start">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumb">
+                                <a class="breadcrumb-item" href="index.html">ホーム</a>
+                                <span class="breadcrumb-item active">診療案内 - 内科/腎臓内科</span>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="row align-items-start">
                         <h2 class="heading-wrap">
                             <span class="heading-small">TREATMENTS</span>
                             <span class="heading-large"><img src="images/heading-icon.svg" alt="" class="heading-icon">診療内容</span>
                         </h2>
-                    </div>
-                    <div class="row treatments-wrap">
-                        <div class="col-xl-4 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/internal.svg" alt="">
-                                    </div>
-                                    <h3>一般内科</h3>
-                                    <p>こんな症状でお悩みの方</p>
+                    </section>
+                    <section class="">
+                        <div class="row pb-4">
+                            <div class="col-lg-3">
+                                <div class="sidebar-list">
+                                    <ul>
+                                        <li><a href="#general">一般内科</a></li>
+                                        <li><a href="#lifestyle-disease">生活習慣病</a></li>
+                                        <li><a href="#nephrology">腎臓内科</a></li>
+                                        <li><a href="#allergy">アレルギー</a></li>
+                                        <li><a href="#vaccinations-healthchecks">予防接種・健康診断</a></li>
+                                        <li><a href="#home-medical-care">在宅医療</a></li>
+                                        <li><a href="#private-practice">自由診療</a></li>
+                                    </ul>
                                 </div>
-                                <p>発熱、かぜ、頭痛、咳、呼吸苦、動悸・息切れ、足のむくみ、胸焼け、便秘、眠れない</p>
                             </div>
-                        </div>
-                        <div class="col-xl-4 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/lifestyle.svg" alt="">
+                            <div class="col-lg-9">
+                                <section class="treatments-bg" id="general">
+                                    <div class="pb-4">
+                                        <h3 class="treatments-title"><img src="images/internal.svg" alt="" class="me-2">一般内科</h3>
+                                        <p>以下のような症状のある方はご相談ください。</p>
+                                        発熱・かぜ症状、頭痛、咳、呼吸苦・息切れ、動悸・息切れ・足のむくみ、立ちくらみ、胸焼け、便秘・下痢、嘔気・嘔吐、食欲がない、急な体重の増減、喉が渇く、眠れない、頻尿
                                     </div>
-                                    <h3>生活習慣病</h3>
-                                    <p>こんな症状でお悩みの方</p>
-                                </div>
-                                <p>糖尿病、高血圧症、脂質異常症、高尿酸血症/痛風、動脈硬化、肥満症、脂肪肝</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/nephrology.svg" alt="">
+                                    <div class="pb-4">
+                                        <h4>対象疾患</h4>
+                                        <ul class="list-primary pb-4">
+                                            <li>循環器疾患
+                                                <ul>
+                                                    <li>高血圧症、慢性心不全(不整脈・弁膜症・虚血性疾患のスクリーニングと慢性期治療)</li>
+                                                </ul>
+                                            </li>
+                                            <li>呼吸器疾患
+                                                <ul>
+                                                    <li>かぜ、インフルエンザ、肺炎/気管支炎、慢性閉塞性肺疾患(COPD)、睡眠時無呼吸症候群など</li>
+                                                </ul>
+                                            </li>
+                                            <li>内分泌代謝疾患
+                                                <ul>
+                                                    <li>糖尿病、甲状腺疾患、高尿酸血症/痛風、骨粗鬆症、肥満症など</li>
+                                                </ul>
+                                            </li>
+                                            <li>消化器疾患
+                                                <ul>
+                                                    <li>胃腸炎、逆流性食道炎、過敏性腸症候群、胆石症、便秘・下痢など</li>
+                                                </ul>
+                                            </li>
+                                            <li>その他
+                                                <ul>
+                                                    <li>関節炎、リンパ節腫大、頭痛、貧血、不眠症など</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <h3>腎臓内科</h3>
-                                    <p>こんな症状でお悩みの方</p>
-                                </div>
-                                <p>検尿異常(蛋白尿・血尿)、慢性腎臓病(CKD)、腹膜透析、腎炎・腎症</p>
-                            </div>
-                        </div>
-                    </div>
+                                    <div class="pb-4">
+                                        <h5>かぜ、インフルエンザ、新型コロナウイルス感染症</h5>
+                                        <p>一般外来診療で一番多い感染症が、かぜ（かぜ症候群）です。ライノウイルス、季節性コロナウイルスなどのウイルスにより発症、鼻症状、咽頭症状が主体で発熱や頭痛、全身倦怠感を伴います。80-90%がウイルス感染症であり抗菌薬は不要で、安静、水分・栄養補給により自然に治癒しますので症状を抑える治療を行います。一方でかぜと思っていて異なる疾患が潜んでいる可能性、かぜ症候群の経過中に細菌感染を合併することもあります。お気軽にご相談ください。インフルエンザ、コロナウイルス感染症もウイルス感染ですが、年齢や背景（既往歴・内服薬）によっては細菌性肺炎などの合併症や入院を要する状態まで増悪することもあり、早期の病状評価と抗ウイルス薬の適応について判断が必要です。</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <h5>頭痛</h5>
+                                        <p>頭痛には一次性と二次性頭痛があります。二次性頭痛は身体に何か原因があって生じる頭痛で、脳血管障害や髄膜炎などの感染症による頭痛、緑内障のような目の病気、副鼻腔炎などによって引き起こされる頭痛があります。一次性頭痛には片頭痛、緊張型頭痛、群発頭痛などがあります。以下のような症状があれば速やかに受診してください。</p>
+                                        <ul class="list-primary">
+                                            <li>突然の頭痛</li>
+                                            <li>これまでに経験したことのない頭痛</li>
+                                            <li>いつもと様子の異なる頭痛</li>
+                                            <li>頻度、程度が増していく頭痛</li>
+                                        </ul>     
+                                    </div>                                
+                                    <div class="pb-4">
+                                        <h5>急性胃腸炎・感染性胃腸炎</h5>
+                                        <p>発熱、下痢、嘔気・嘔吐、腹痛といった症状を伴います。ウイルスが付着した料理を食べたり、手指についたウイルスが口に触れたりすることで感染します。多くはウイルス感染(ノロウイルス、ロタウイルス、アデノウイルスなど)により起こり、一部は細菌感染(カンピロバクター、サルモネラ菌、腸管出血性大腸炎)により起こります。 治療は脱水の補正、予防と症状をおさえる治療を行います。</p>    
+                                    </div>                                
+                                    <div class="pb-4" id="SAS">
+                                        <h5>睡眠時無呼吸症候群</h5>
+                                        <p>いびきをかいていると言われたり、熟眠感がない、日中に眠気がある、起床時の頭痛・口腔乾燥、夜間頻尿といった症状はありませんか？自覚症状に乏しい方も多くいらっしゃる病気ですが、高血圧など生活習慣病、心不全、脳卒中など心臓や血管のご病気と関連があると言われています。ご自宅で行える簡易検査でも診断することができます。詳細な検査を希望される場合には総合病院の専門外来へ紹介させていただきます。当院ではCPAPによる治療が可能ですが、あくまで対症療法になります。肥満が原因であれば減量を進める必要があり、食事や運動習慣を見直しましょう。気になる症状があればお気軽にご相談ください。</p>
+                                    </div>                                
+                                    <div class="">
+                                        <h5>不眠症</h5>
+                                        <p>布団に入っても眠れない、途中で目が覚めてしまう、日中に眠気や疲労感がある、といったことはありませんか。試験や心配事などのストレス、生活環境の変化などが原因で不眠となることがあります。一方で、睡眠時無呼吸症候群などの身体疾患により睡眠の質が低下していることもあります。焦らずに原因と対応を考えていきましょう。</p>
+                                    </div>
+                                </section>
+                                <section class="treatments-bg" id="lifestyle-disease">
+                                    <div class="pb-4">
+                                        <h3 class="treatments-title"><img src="images/lifestyle.svg" alt="" class="me-2">生活習慣病</h3>
+                                        <p>生活習慣病とは、食習慣、運動習慣、喫煙、飲酒などの生活習慣が、発症、進行に関与するご病気の総称で、糖尿病、高血圧、脂質異常症、高尿酸血症などがあります。症状が乏しいことが多く、気付かないうちに病気が進行して様々な合併症を引き起こします。動脈硬化が徐々に進行し、心臓病、脳卒中、腎臓病などのリスクが高まるため注意が必要です。早期に発見して、早期に治療を開始することが重要です。</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <h5>糖尿病</h5>
+                                        <p class="pb-3">糖尿病とは膵臓から分泌されるインスリンというホルモンが、十分に働かないために血液中の血糖値が高くなる病気です。1型糖尿病、2型糖尿病など4つのタイプに分類されています。2型糖尿病の発症には、インスリンの分泌不足といった要因に加え、過食、運動不足、肥満、ストレスといった生活習慣が関係しているインスリン抵抗性とが考えられています。</p>
+                                        <div class="pb-3">
+                                            <h6>糖尿病の合併症</h6>
+                                            <p>高血糖が持続すると血管が障害され、様々な臓器に影響を与えます。とくに神経や血管が集中している臓器が影響を受けやすく、三大合併症といわれる糖尿病網膜症、糖尿病性腎症、糖尿病性神経障害を引き起こします。また、狭心症、心筋梗塞、脳梗塞、末梢動脈疾患などの大血管疾患の危険因子にもなります。糖尿病の進行や重大な合併症を防ぐためにも、健康診断などで糖尿病を指摘された場合は、放置せずにきちんと受診すること、定期的に合併症の有無を調べることが重要です。</p>
+                                        </div>
+                                        <div class="">
+                                            <h6>糖尿病の治療とその意義</h6>
+                                            <p>食事療法、運動療法、内服薬や注射薬から治療を選択します。インスリンを分泌する力があるかどうか、インスリンが効きづらい状態にないか、上記の合併症がないかを並行して調べます。長期的に至適領域に血糖値をコントロールして合併症を予防し、糖尿病がない人と同様の健康寿命を保つ上で治療継続が非常に大切です。うまく続けていく方法を一緒に考えていきましょう。</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-4">
+                                        <h5>高血圧症</h5>
+                                        <p>高血圧症は日本で最も多い疾患の1つと言われていて、その数は約4300万人といわれています。自覚症状が乏しいことが多く、血圧が高い状態をそのままにしておくと脳や心臓、全身の血管が動脈硬化を起こし、脳卒中、狭心症などの心臓病、腎臓病などの重大な病気を発症する危険性および死亡の危険性が高くなります。</p>
+                                        <h6>高血圧の原因</h6>
+                                        <p>高血圧は、本態性高血圧（原因がはっきりしない）と二次性高血圧（原因が特定できる）に分けられます。日本人の高血圧の約9割が本態性高血圧であり、生活習慣などの環境因子や遺伝的因子によって起こります。一方、二次性高血圧は若年者に多く、血圧を上昇させるホルモンの異常や腎臓・血管の病気・睡眠時無呼吸症候群などで起こります。</p>
+                                        <h6>評価と治療</h6>
+                                        <p>血圧測定器があればご自身での血圧測定は容易で、効果的な治療薬も多数あり、気軽に治療されていることが多い病気です。一方で、家庭できちんと測定できているか、合併症がないか。また背景に血圧を上昇させる病気が潜んでいないか、を確認することも重要になります。<br>きちんと現状を把握して、生活習慣の見直しから、適した降圧剤の選択を提案させていただきます。
+                                        </p>    
+                                    </div>                                
+                                    <div class="pb-4">
+                                        <h5>脂質異常症</h5>
+                                        <p>脂質はエネルギー源、細胞の壁やホルモンの材料として重要な物質です。脂質が多くなりすぎると問題になる場合があります。脂質異常症の発症には過食や運動不足、肥満、喫煙、過度な飲酒などが関係していると言われています。
+                                            脂質の数値の目標が年齢や性別、持病の有無によって異なります。そのため、背景に合併症がないかをしっかりと確認することが大切です。そのためには動脈硬化がないか、また頻度は稀ですが甲状腺の機能が低下していないか、といったことを確認することが重要です。
+                                            そのままにしていると、動脈硬化が起こり、徐々に進行して脳梗塞や心筋梗塞といった動脈硬化性疾患のリスクが高くなります。健康診断などで指摘されたら一度ご相談下さい。
+                                            </p>    
+                                    </div>                                
+                                    <div class="">
+                                        <h5>高尿酸血症/痛風</h5>
+                                        <p>高尿酸血症は尿酸値が7mg/dL以上と定義されています。高尿酸血症、痛風患者には高血圧、心血管障害、脂質異常症、肥満、メタボリック症候群などの生活習慣病が多いことは以前より知られており、高尿酸血症は高血圧症、心血管疾患、腎障害などを悪化させる要因ではないかと言われています。まずは原因となる生活習慣がないかを確認し、運動習慣や食生活を改善していくことが大切です。</p>
+                                    </div>                                                              
+                                    
+                                </section>
+                                <section class="treatments-bg" id="nephrology">
+                                    <div class="pb-4">
+                                        <h3 class="treatments-title"><img src="images/nephrology.svg" alt="" class="me-2">腎臓内科</h3>
+                                        <p>腎臓はただ尿を作るだけの臓器ではなく、体内の恒常性、バランスを保つために日夜働き続けています。腎臓の働きが悪くなると、高血圧、高尿酸血症などの生活習慣病や、ミネラルバランスの異常、貧血や骨粗鬆症などの病気につながります。腎臓内科は腎機能が低下、血尿や蛋白尿が持続している、といった方の腎臓を少しでもいい状態に保ち、長持ちさせるように治療する内科です。</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <h5>慢性腎臓病(CKD)</h5>
+                                        <p>現在、成人の8人に1人が慢性腎臓病であると言われています。原因は多岐にわたり、糖尿病、高血圧などの生活習慣病、腎炎などがあります。
+                                            腎機能低下が進むと透析療法を要するリスクが高くなりますが、同時に脳卒中や狭心症などの心血管疾患のリスクも高くなります。
+                                            自覚症状に乏しいことも多く、症状が出現する頃には末期腎不全に至っていることもあります。原因や他の合併症の状況によっても進行速度は異なり、患者さんごとに個別化治療が必要です。早期発見、早期治療により進行を抑制し、腎代替療法を可能な限り先延ばしにする、避けられるようにあらゆる手を尽くします。
+                                        </p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <h5>検尿異常(蛋白尿・血尿)</h5>
+                                        <p>尿の異常は腎機能障害の指標としてとても大切です。
+                                            腎機能低下が脳卒中や狭心症などの心血管疾患のリスクになりますが、尿蛋白も同様にこれらのリスクになります。原因を特定し、制御に努めます。
+                                            血尿は腎臓内科、泌尿器科の双方の病気で出現します。尿中の赤血球の形態からどちらを判断し、適切な検査とフォローアップを行う必要があります。 
+                                        </p>  
+                                    </div>                                
+                                    <div class="">
+                                        <h5>腹膜透析</h5>
+                                        <p>現在、腎代替療法は血液透析が多く選択されています。腹膜透析の管理を行える施設が限られていることも要因の一つと思われます。当院院長は京都腎臓医学会の京都腹膜透析地域連携ワーキンググループの一員として、在宅腹膜透析を行うための環境整備に取り組んでいます。</p>
+                                        <h6>腹膜透析のメリット</h6>
+                                        <ul>
+                                            <li>通院回数が少なく、生活リズムの変化が少ない</li>
+                                            <li>カリウム制限が少ない</li>
+                                            <li>血圧の変動が少ない</li>
+                                        </ul>
+                                        <p>当院でもご自宅で腹膜透析を受けていただけるよう調整を進めています。</p>
+                                    </div>                                                           
+                                </section>
+                                <section class="treatments-bg" id="allergy">
+                                    <div class="pb-4">
+                                        <h3 class="treatments-title"><img src="images/allergy.svg" alt="" class="me-2">アレルギー</h3>
+                                        <p>私たちの体には、自分自身と自分でないものを見分ける仕組みがあり、この働きは「免疫応答」と呼ばれています。外からの侵入者を見つけて排除しようとする仕組みが働くことで様々な症状が出ます。花粉や食べ物、家の中のホコリ、動物のふけなどはヒトを攻撃するものではなく、本来は無害であるものです。しかし、アレルギーの方はそれらに対して過剰に反応してしまいます。これを「アレルギー反応」といいます。アレルギーが関係する病気としては、花粉症やアレルギー性鼻炎、ぜん息、アトピー性皮膚炎、食物アレルギーなどがあります。</p>
+                                    </div>
+                                    <div class="pb-4">
+                                        <h5>アレルギー性鼻炎</h5>
+                                        <p>アレルギー性鼻炎はアレルゲンにより、くしゃみ、鼻水、鼻づまりを起こすアレルギー疾患です。ダニやカビなどによる通年性アレルギ性鼻炎と、樹木や草の花粉などによる季節性アレルギー（花粉症）があります。
+                                        </p>
+                                        <h6>アレルギー性鼻炎の予防方法</h6>
+                                        <p>抗原の除去・回避（吸いこまないようにする）<br>
+                                            マスクやメガネを着用したり、掃除をして環境をきれいに保つことが大切です。帰宅時、衣服や髪をよくはらってから家に入ること、布団や洗濯物の外干しのタイミング、換気の方法などに気をつけます。
+                                        </p>
+                                        <h6>アレルギー性鼻炎の治療</h6>
+                                        <p>抗ヒスタミン薬内服を軸に、症状に応じて内服薬、点鼻薬、点眼薬の併用を行います。抗ヒスタミン薬にも効果の強さや眠気の強さが異なります。症状、治療効果、副作用をてんびんにかけて、お体に合うものを見つけましょう。</p>
 
-                    <div class="row treatments-wrap">
-                        <div class="col-md-6 col-xl-3 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/allergy.svg" alt="">
                                     </div>
-                                    <h3>アレルギー</h3>
-                                </div>
-                                <p>アレルギー検査、花粉症、喘息、じんま疹</p>
+                                    <div class="">
+                                        <h5>喘息</h5>
+                                        <p>喘息では健常人では感じないようなちょっとした刺激を受けて、気道に炎症が生じて空気の通りが悪くなる病気です。何度も繰り返す咳、ゼーゼー、ヒューヒューと音がする喘鳴、呼吸困難が生じます。アレルギーが関与する喘息と、関与しない喘息があります。完治することができないため、治療の継続と原因となる刺激を避けることが大切です。 
+                                        </p>
+                                        <h6>喘息の治療</h6>
+                                        <p>喘息の症状が悪くなる要因を避けることが大切です。外的なものとして、ダニやカビなどのアレルゲンへの暴露、喫煙、大気汚染など、また内的なものとして鼻炎・副鼻腔炎、肥満、アルコールなどがあります。長期的に症状がない時であっても炎症を抑えるために使用する薬（コントローラー）と発作時に症状を抑える薬（リリーバー）を使って、将来の呼吸機能低下を防ぎます。
+                                        </p>
+                                    </div>                                                     
+                                </section>
+                                <section class="treatments-bg" id="vaccinations-healthchecks">
+                                    <h3 class="treatments-title"><img src="images/vaccination.svg" alt="" class="me-2">予防接種・健康診断</h3>
+                                    <div class="pb-3">
+                                        <h5>予防接種</h5>
+                                        <p>当院ではインフルエンザワクチン、肺炎球菌ワクチンなどの予防接種を行なっています。
+                                            ワクチン接種は小学生以上を対象としています。（インフルエンザワクチンなど一部は就園児に対して施行）<br>
+                                            ご希望の方は、まず電話にてお問い合わせください。<br>
+                                            インフルエンザワクチン、新型コロナウイルスワクチン、麻疹風疹混合、ムンプス（おたふくかぜ）, 肺炎球菌ワクチン、帯状疱疹ワクチンなど
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h5>健康診断、健康診査、がん/肝炎ウイルス検診、その他健康診断</h5>
+                                        <ul>
+                                            <li>特定健康診査、後期高齢者健康診査</li>
+                                            <li>胃がんABC検診、大腸がん検診、前立腺がん検診</li>
+                                            <li>肝ウイルス炎検診</li>
+                                            <li>雇用時/定期健康診断</li>
+                                            <li>生命保険会社の診査</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pb-3">
+                                        <h6>特定健康診査</h6>
+                                        <p>メタボリックシンドロームに着目した健康診断です。結果をもとに、生活習慣の改善、必要な治療を行うことで、将来の生活習慣病の発症、重症化のリスクの軽減を図ることを目的としています。<br>対象者：保険に加入されている40-74歳の方。<br>検査項目：身体測定、血圧測定、尿検査、血液検査検査を行います。
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h6>後期高齢者健康診査</h6>
+                                        <p>糖尿病、心臓病、脳卒中などの生活習慣病の発症や重症化を未然に防ぐことや、加齢に伴う心身の衰え（フレイル）をチェックし、医療や介護予防につなげることを目的にとしています。<br>
+                                            対象者：75歳以上の後期高齢者医療の被保険者。<br>
+                                            検査項目：身体測定、血圧測定、尿検査、血液検査検査を行います。
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h6>胃がんABC検診</h6>
+                                        <p>日本では胃がんの原因の多くがヘリコバクター・ピロリ菌由来であると言われています。
+                                            血液検査にて、ピロリ菌感染の有無と胃の萎縮の程度を調べて、胃がんのリスクを判定します。リスクがあると判定された場合には協力医療機関での胃カメラを含めた精査を行います。<br>
+                                            対象者：30歳、35歳、40-49歳<br>
+                                            除外対象：
+                                            過去に、胃がんと診断された、胃切除術を受けた、ヘリコバクター・ピロリ菌を除菌した方、<br>
+                                            現在、胃潰瘍・十二指腸潰瘍の治療薬を服用中、腎不全の治療中または経過観察中、ステロイドや免疫を抑える薬を服薬中<br>
+                                            検査項目：血液検査
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h6>大腸がん検診</h6>
+                                        <p>大腸がんは男女とも増加傾向にあります。早期には自覚症状がないことが多いですが、大腸がん検診は死亡率を減少させることが証明された有効な検診です。<br>
+                                            対象者：40歳以上<br>
+                                            検査項目：便潜血検査、2回分
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h6>前立腺がん検診</h6>
+                                        <p>前立腺がんは2020年時点で、男性のがんの1位となっています。早期には自覚症状がないことも多いですが、尿が出にくい、排尿の回数が多いなどの症状が出ることもあります。
+                                            対象者：50歳以上で西暦が偶数年の年は、西暦で奇数年に生まれた男性。奇数年には、偶数年に生まれた男性が対象となります。<br>
+                                            検査項目：血液検査                                            
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h6>肝炎ウイルス検診</h6>
+                                        <p>B型とC型肝炎を調べます。肝硬変、肝がんに進行する場合があり、早期発見をして治療を行い、進行を予防することが大切です。<br>
+                                            対象者：40歳以上の方のうち、今までに肝炎の治療や検診を受けたことがない方<br>
+                                            検査項目：血液検査
+                                        </p>
+                                    </div>
+                                    <div class="pb-3">
+                                        <h6>企業健診（雇入れ時の健康診断・定期健康診断）</h6>
+                                        <p>
+                                            雇入れ時の健康診断：従業員を雇入れる際に行わなければならない健康診断です。 
+                                            定期健康診断：1年に1回定期的に行わなければならないと義務付けられた健康診断です。
+                                        </p>
+                                    </div>
+
+                                    <div class="pb-4">
+                                        <p class="text-blue">健診料金</p>
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">・シンプル健診</td>
+                                                    <td>4,000円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">・雇入時健診</td>
+                                                    <td>8,000円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">・定期健康診断（35歳を除く40歳未満）</td>
+                                                    <td>5,500円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">・定期健診（35歳及び40歳以上）</td>
+                                                    <td>8,000円</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="pb-3">
+                                        <p class="text-blue">健診内容</p>
+                                        <div class="scroll js-scrollable">
+                                            <table class="table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                      <th></th>
+                                                      <th>シンプル健診</th>
+                                                      <th>雇入時健診</th>
+                                                      <th>定期健康診断<br><span>（35歳を除く40歳未満）</span></th>
+                                                      <th>定期健診<br><span>（35歳及び40歳以上）</span></th>
+                                                    </tr> 
+                                                </thead>
+    
+                                                <tbody>
+                                                    <tr>
+                                                      <th class="">問診・診察<br><span>病歴，自覚症状，他覚症状など</span> </th>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>身体検査<br><span>身長，体重，腹囲，BMI</span></th>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>血圧測定</th>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>視力</th>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>聴力<br><span>オージオメーター(1000Hz/4000Hz)</span></th>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>尿検査<br><span>尿蛋白，尿潜血，尿糖</span></th>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>貧血検査<br><span>RBC，Hb，Ht，WBC，Plt</span></th>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>肝機能検査<br><span>GOT，GPT，γGTP</span></th>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>脂質検査<br><span>HDL/LDL-コレステロール，中性脂肪</span></th>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>血糖検査<br><span>空腹時血糖</span></th>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>胸部X線検査</th>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>心電図検査<br><span>12誘導心電図</span></th>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                      <td></td>
+                                                      <td>○</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th>料金</th>
+                                                      <td>4,000円</td>
+                                                      <td>8,000円</td>
+                                                      <td>5,500円</td>
+                                                      <td>8,000円</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>採血の内容によっては料金が変更になります。</p>
+                                    </div>
+
+
+
+                                    <div class="">
+                                        <h6>オプション検査</h6>
+                                        <!-- <ul>
+                                            <li>心電図検査：1,000円</li>
+                                            <li>胸部X線検査：2,000円</li>
+                                            <li>腫瘍マーカー(CEA、CA19-9、CA-125、PSA)：各1,000円</li>
+                                        </ul> -->
+
+                                        <table class="">
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">・胸部X線検査</td>
+                                                    <td>2,000円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">・心電図検査</td>
+                                                    <td>1,000円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">・腫瘍マーカー（CEA、CA19-9、CA-125、PSA）</td>
+                                                    <td>各1,000円</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>                     
+                                </section>
+                                <section class="treatments-bg" id="home-medical-care">
+                                    <div class="pb-4">
+                                        <h3 class="treatments-title"><img src="images/care.svg" alt="" class="me-2">在宅医療</h3>
+                                        <div class="pb-4">
+                                            <h5>訪問診療</h5>
+                                            <p>通院が難しくなった患者様のケアを継続するために、ケアマネージャー、訪問看護師、薬剤師と連携して診療を行います。ご相談ください。
+                                            </p>
+                                        </div>
+                                        <div class="pb-4">
+                                            <h5>持続陽圧呼吸療法(CPAP)</h5>
+                                            <p><a href="#SAS">→睡眠時無呼吸症候群へ</a>
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <h5>在宅酸素療法（HOT）</h5>
+                                            <p>肺気腫などの慢性閉塞性肺疾患（COPD）や間質性肺炎などによる慢性呼吸不全、慢性心不全などが対象となります。症状改善、低酸素血漿の改善、QOLの向上といった効果があります。
+                                            </p>
+                                        </div>
+                                    </div>                                                 
+                                </section>
+                                <section class="treatments-bg" id="private-practice">
+                                    <div class="pb-4">
+                                        <h3 class="treatments-title"><img src="images/private.svg" alt="" class="me-2">自由診療</h3>
+                                        <div class="pb-4">
+                                            <h5>男性型脱毛症(AGA)</h5>
+                                        </div>
+                                        <div class="">
+                                            <h5>勃起不全(ED)</h5>
+                                        </div>
+                                    </div>                                                 
+                                </section>
+
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/vaccination.svg" alt="">
-                                    </div>
-                                    <h3>予防接種・健康診断</h3>
-                                </div>
-                                <p>予防接種、健康診断、健康診査、がん検診</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/care.svg" alt="">
-                                    </div>
-                                    <h3>在宅医療</h3>
-                                </div>
-                                <p>往診、持続陽圧呼吸療法(CPAP)、在宅酸素療法（HOT）</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 p-3">
-                            <div class="treatments-card">
-                                <div class="treatments-card-heading">
-                                    <div class="treatments-icon">
-                                        <img src="images/private.svg" alt="">
-                                    </div>
-                                    <h3>自由診療</h3>
-                                </div>
-                                <p>男性型脱毛症(AGA)、勃起不全(ED)</p>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </section>
             <section id="affiliations">
@@ -241,7 +627,7 @@
                                     </div>
                                     <div class="footer-btn-secondary">
                                         <a href="tel:0774416259">
-                                            <i class="fas fa-phone-alt me-2"></i>0774-41-6259
+                                            <i class="fas fa-phone-alt me-1"></i>0774-41-6259
                                         </a>
                                     </div>
                                 </div>
@@ -315,8 +701,10 @@
                                 <ul class="f-nav">
                                     <li><a href="index.html">ホーム</a></li>
                                     <li><a href="about.html">クリニックについて</a></li>
-                                    <li><a href="treatment.html">診療案内</a></li>
+                                    <li><a href="treatments.html">診療案内</a></li>
                                     <li><a href="access.html">診療時間・アクセス</a></li>
+                                    <li><a href="info.html">お知らせ</a></li>
+                                    <li><a href="howto-reserve.html">WEB予約方法</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -330,7 +718,7 @@
 
         <div id="sp-float">
             <div class="sp-float-btn-wrap">
-                <a href="tel:0774416259" class="sp-float-phone"><span class="sp-float-text"><i class="fas fa-phone-alt me-2"></i>0774-41-6259</span></a>
+                <a href="tel:0774416259" class="sp-float-phone"><span class="sp-float-text"><i class="fas fa-phone-alt me-1"></i>0774-41-6259</span></a>
                 <a href="https://junnavi.com/takenaka/" target="_blank" class="sp-float-web"><span class="sp-float-text"><i class="fas fa-calendar-alt me-2"></i>WEB予約</span></a>
             </div>
         </div>
@@ -340,6 +728,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     
     <script src="js/custom.js"></script>
+
+    <script>
+        new ScrollHint('.js-scrollable');
+    </script>
 
 
 

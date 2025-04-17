@@ -12,6 +12,14 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZMH27Y1WM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XZMH27Y1WM');
+</script>
 
 <!-- jquery CDN -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -33,17 +41,17 @@
 <body>
     <div id="top-image-name"></div>
     <div id="page-top" class="ccm-page ccm-page-id-1 page-template-home seren-c5wrap">
-        <header class="navbar navbar-expand-lg fixed-top" role="navigation">
+        <header class="navbar navbar-expand-xl fixed-top" role="navigation">
             <div id="seren-masthead">
                 <div class="container-fluid">
                     <div class="row">
-                        <div id="seren-masthead-right" class="col-0 col-lg-12 order-2">
+                        <div id="seren-masthead-right" class="col-0 col-xl-12 order-2">
                             <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
                             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                        <div id="site-logo-area" class="col-9 col-lg-12 order-1">
+                        <div id="site-logo-area" class="col-9 col-xl-12 order-1">
                             <div class="d-flex align-items-center">
                                 <h1 id="site-logo">
                                     <a href="index.html">
@@ -55,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,7 +74,7 @@
                             <span class="nav-schedule">9:00～12:00/17:00～19:30　水曜土曜午後休診、日曜祝日休診</span>
                             <div class="header-btn-wrap">
                                 <a href="tel:0774416259" class="header-btn-phone_pc">
-                                    <i class="fas fa-phone-alt me-2"></i>0774-41-6259</a>
+                                    <i class="fas fa-phone-alt me-1"></i>0774-41-6259</a>
                             </div>
                         </div>
                         <ul class="navbar-nav">
@@ -82,13 +90,19 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="access.html">診療時間・アクセス</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="info.html">お知らせ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="howto-reserve.html">WEB予約方法</a>
+                            </li>
                             <li class="header-btn-wrap">
                                 <a href="https://junnavi.com/takenaka/" target="_blank" class="header-btn-web">
                                     <i class="fas fa-calendar-alt me-2"></i>WEB予約</a>
                             </li>
                             <li class="header-btn-wrap">
                                 <a href="tel:0774416259" class="header-btn-phone_sp">
-                                    <i class="fas fa-phone-alt me-2"></i>0774-41-6259</a>
+                                    <i class="fas fa-phone-alt me-1"></i>0774-41-6259</a>
                             </li>
                         </ul>
                     </div>
@@ -104,7 +118,15 @@
             </section>
             <section id="greetings">
                 <div class="container">
-                    <div class="">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumb">
+                                <a class="breadcrumb-item" href="index.html">ホーム</a>
+                                <span class="breadcrumb-item active">クリニックについて</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <h2 class="heading-wrap text-center mb-5">
                             <span class="heading-small">GREETINGS</span>
                             <span class="heading-large"><img src="images/heading-icon.svg" alt="" class="heading-icon">ごあいさつ</span>
@@ -134,218 +156,203 @@
             <section id="doctors">
                 <div class="container">
                     <div class="row">
-                        <h2 class="heading-wrap">
-                            <span class="heading-small">DOCTORS</span>
-                            <span class="heading-large"><img src="images/heading-icon.svg" alt="" class="heading-icon">医師紹介</span>
-                        </h2>
-                        <!-- <section class="doctors-wrap">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="images/kawamura-dr.jpg" alt="" class="mt-3">
+                        <div class="col-12">
+                            <h2 class="heading-wrap">
+                                <span class="heading-small">DOCTORS</span>
+                                <span class="heading-large"><img src="images/heading-icon.svg" alt="" class="heading-icon">医師紹介</span>
+                            </h2>
+                            <section class="doctors-wrap">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="doctors-name"><img src="images/doctor.svg" alt="" width="">川村知央<span>KAWAMURA TOMOHIRO</span></h3>
+                                    </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <h3 class="doctors-name">
-                                        <img src="images/doctor.svg" alt="" width="">
-                                        川村知央<span>KAWAMURA TOMOHIRO</span> </h3>
-                                    <h4 class="doctors-heading">経歴</h4>
-                                    <table class="doctors-career">
-                                        <tbody>
-                                            <tr>
-                                            <th><span class="d-inlne-block">2007年</span><span class="d-inlne-block">4月</span></th>
-                                            <td>京都府立医科大学医学部医学科</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2013年4月</th>
-                                            <td>社会保険神戸中央病院　初期研修医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2014年4月</th>
-                                            <td>京都府立医科大学附属病院　初期研修医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2015年4月</th>
-                                            <td>洛和会音羽病院腎臓内科・糖尿病内科・リウマチ科　後期研修医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2018年4月</th>
-                                            <td>大阪急性期・総合医療センター　腎臓・高血圧内科　スーパーレジデント，医員</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2021年4月</th>
-                                            <td>京都岡本記念病院　腎臓内科　医長</td>
-                                            </tr>
-                                            <tr>
-                                            <th></th>
-                                            <td>竹中内科医院　非常勤勤務開始</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2025年4月</th>
-                                            <td>かわむら内科クリニック開院</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <h4 class="doctors-heading">所属学会など</h4>
-                                    <ul class="doctors-list">
-                                        <li>日本内科学会</li>
-                                        <li>日本腎臓学会</li>
-                                        <li>日本リウマチ学会</li>
-                                        <li>日本糖尿病協会</li>
-                                        <li>国際腎臓学会，米国腎臓学会，欧州腎臓学会</li>
-                                        <li>京都腎臓医会　腹膜透析</li>
-                                        <li>大阪大学腎臓内科</li>
-                                    </ul>
-                                    <h4 class="doctors-heading">資格など</h4>
-                                    <ul class="doctors-list">
-                                        <li>日本内科学会　認定内科医</li>
-                                        <li>日本腎臓学会　腎臓専門医</li>
-                                    </ul>
+                                <div class="row mt-2 mt-md-4">
+                                    <div class="col-md-3">
+                                        <img src="images/kawamura-dr.jpg" alt="川村知央" class="doctors-image">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h4 class="doctors-heading">経歴</h4>
+                                        <table class="doctors-career">
+                                            <tbody>
+                                                <tr>
+                                                <th>2007年4月</th>
+                                                <td>京都府立医科大学医学部医学科</td>
+                                                </tr>
+                                                <tr>
+                                                <th>2013年4月</th>
+                                                <td>社会保険神戸中央病院　初期研修医</td>
+                                                </tr>
+                                                <tr>
+                                                <th>2014年4月</th>
+                                                <td>京都府立医科大学附属病院　初期研修医</td>
+                                                </tr>
+                                                <tr>
+                                                <th>2015年4月</th>
+                                                <td>洛和会音羽病院腎臓内科・糖尿病内科・リウマチ科　後期研修医</td>
+                                                </tr>
+                                                <tr>
+                                                <th>2018年4月</th>
+                                                <td>大阪急性期・総合医療センター　腎臓・高血圧内科　スーパーレジデント，医員</td>
+                                                </tr>
+                                                <tr>
+                                                <th rowspan="2">2021年4月</th>
+                                                <td>京都岡本記念病院　腎臓内科　医長</td>
+                                                </tr>
+                                                <tr>
+                                                <td>竹中内科医院　非常勤勤務開始</td>
+                                                </tr>
+                                                <tr>
+                                                <th>2025年4月</th>
+                                                <td>かわむら内科クリニック開院</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4 class="doctors-heading">所属学会など</h4>
+                                        <ul class="doctors-list">
+                                            <li>日本内科学会</li>
+                                            <li>日本腎臓学会</li>
+                                            <li>日本リウマチ学会</li>
+                                            <li>日本糖尿病協会</li>
+                                            <li>国際腎臓学会，米国腎臓学会，欧州腎臓学会</li>
+                                            <li>京都腎臓医会　腹膜透析ワーキンググループ</li>
+                                            <li>大阪大学腎臓内科医局員</li>
+                                        </ul>
+                                        <h4 class="doctors-heading">資格など</h4>
+                                        <ul class="doctors-list">
+                                            <li>日本内科学会　認定内科医</li>
+                                            <li>日本腎臓学会　腎臓専門医</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </section> -->
-                        <section class="doctors-wrap">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="doctors-name"><img src="images/doctor.svg" alt="" width="">川村知央<span>KAWAMURA TOMOHIRO</span></h3>
+                            </section>
+    
+                            <section class="doctors-wrap">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="doctors-name"><img src="images/doctor.svg" alt="竹中正純" width="">竹中正純<span>TAKENAKA MASAZUMI</span></h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row mt-2 mt-md-4">
-                                <div class="col-md-3">
-                                    <img src="images/kawamura-dr.jpg" alt="川村知央" class="doctors-image">
+                                <div class="row mt-2 mt-md-4">
+                                    <div class="col-md-3">
+                                        <img src="images/takenaka-dr.jpg" alt="竹中正純" class="doctors-image">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h4 class="doctors-heading">経歴</h4>
+                                        <table class="doctors-career">
+                                            <tbody>
+                                                <tr>
+                                                <th>1968年4月</th>
+                                                <td>大阪医科大学医学部医学科卒業</td>
+                                                </tr>
+                                                <tr>
+                                                <th>1974年4月</th>
+                                                <td>大阪医科大学附属病院第一内科 医員</td>
+                                                </tr>
+                                                <tr>
+                                                <th>1976年9月</th>
+                                                <td>東京都駒込病院神経内科 医員</td>
+                                                </tr>
+                                                <tr>
+                                                <th>1978年9月</th>
+                                                <td>大阪医科大学附属病院第一内科 専攻医</td>
+                                                </tr>
+                                                <tr>
+                                                <th>1985年2月</th>
+                                                <td>大阪医科大学附属病院第一内科 助手</td>
+                                                </tr>
+                                                <tr>
+                                                <th>1989年4月</th>
+                                                <td>竹中内科医院開院</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h4 class="doctors-heading">資格など</h4>
+                                        <ul class="doctors-list">
+                                            <li>医学博士</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-md-9">
-                                    <h4 class="doctors-heading">経歴</h4>
-                                    <table class="doctors-career">
-                                        <tbody>
-                                            <tr>
-                                            <th>2007年4月</th>
-                                            <td>京都府立医科大学医学部医学科</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2013年4月</th>
-                                            <td>社会保険神戸中央病院　初期研修医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2014年4月</th>
-                                            <td>京都府立医科大学附属病院　初期研修医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2015年4月</th>
-                                            <td>洛和会音羽病院腎臓内科・糖尿病内科・リウマチ科　後期研修医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2018年4月</th>
-                                            <td>大阪急性期・総合医療センター　腎臓・高血圧内科　スーパーレジデント，医員</td>
-                                            </tr>
-                                            <tr>
-                                            <th rowspan="2">2021年4月</th>
-                                            <td>京都岡本記念病院　腎臓内科　医長</td>
-                                            </tr>
-                                            <tr>
-                                            <td>竹中内科医院　非常勤勤務開始</td>
-                                            </tr>
-                                            <tr>
-                                            <th>2025年4月</th>
-                                            <td>かわむら内科クリニック開院</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <h4 class="doctors-heading">所属学会など</h4>
-                                    <ul class="doctors-list">
-                                        <li>日本内科学会</li>
-                                        <li>日本腎臓学会</li>
-                                        <li>日本リウマチ学会</li>
-                                        <li>日本糖尿病協会</li>
-                                        <li>国際腎臓学会，米国腎臓学会，欧州腎臓学会</li>
-                                        <li>京都腎臓医会　腹膜透析</li>
-                                        <li>大阪大学腎臓内科</li>
-                                    </ul>
-                                    <h4 class="doctors-heading">資格など</h4>
-                                    <ul class="doctors-list">
-                                        <li>日本内科学会　認定内科医</li>
-                                        <li>日本腎臓学会　腎臓専門医</li>
-                                    </ul>
+                            </section>
+    
+                            <section class="doctors-wrap">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="doctors-name"><img src="images/doctor.svg" alt="" width="">岩本祐太<span>IWAMOTO YUTA</span></h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                                <div class="row mt-2 mt-md-4">
+                                    <div class="col-md-3">
+                                        <img src="images/now-printing.png" alt="" class="doctors-image">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h4 class="doctors-heading">所属学会など</h4>
+                                        <ul class="doctors-list">
+                                            <li>日本内科学会</li>
+                                            <li>日本腎臓学会</li>
+                                            <li>日本透析医学会</li>
+                                        </ul>
+                                        <h4 class="doctors-heading">資格など</h4>
+                                        <ul class="doctors-list">
+                                            <li>日本内科学会 内科専門医</li>
+                                            <li>日本透析医学会 透析専門医</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
 
-                        <section class="doctors-wrap">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="doctors-name"><img src="images/doctor.svg" alt="竹中正純" width="">竹中正純<span>TAKENAKA MASAZUMI</span></h3>
-                                </div>
-                            </div>
-                            <div class="row mt-2 mt-md-4">
-                                <div class="col-md-3">
-                                    <img src="images/takenaka-dr.jpg" alt="竹中正純" class="doctors-image">
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="doctors-heading">経歴</h4>
-                                    <table class="doctors-career">
-                                        <tbody>
-                                            <tr>
-                                            <th>1968年4月</th>
-                                            <td>大阪医科大学医学部医学科卒業</td>
-                                            </tr>
-                                            <tr>
-                                            <th>1974年4月</th>
-                                            <td>大阪医科大学附属病院第一内科 医員</td>
-                                            </tr>
-                                            <tr>
-                                            <th>1976年9月</th>
-                                            <td>東京都駒込病院神経内科 医員</td>
-                                            </tr>
-                                            <tr>
-                                            <th>1978年9月</th>
-                                            <td>大阪医科大学附属病院第一内科 専攻医</td>
-                                            </tr>
-                                            <tr>
-                                            <th>1985年2月</th>
-                                            <td>大阪医科大学附属病院第一内科 助手</td>
-                                            </tr>
-                                            <tr>
-                                            <th>1989年4月</th>
-                                            <td>竹中内科医院開院</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <h4 class="doctors-heading">資格など</h4>
-                                    <ul class="doctors-list">
-                                        <li>医学博士</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="doctors-wrap">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="doctors-name"><img src="images/doctor.svg" alt="" width="">岩本祐太<span>IWAMOTO YUTA</span></h3>
-                                </div>
-                            </div>
-                            <div class="row mt-2 mt-md-4">
-                                <div class="col-md-3">
-                                    <img src="images/now-printing.png" alt="" class="doctors-image">
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="doctors-heading">所属学会など</h4>
-                                    <ul class="doctors-list">
-                                        <li>日本内科学会</li>
-                                        <li>日本腎臓学会</li>
-                                        <li>日本透析医学会</li>
-                                    </ul>
-                                    <h4 class="doctors-heading">資格など</h4>
-                                    <ul class="doctors-list">
-                                        <li>日本内科学会 内科専門医</li>
-                                        <li>日本透析医学会 透析専門医</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+                        </div>
     
                     </div>
                 </div>
             </section>
-            <section id="guide">
+
+            <section id="equipments">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="heading-wrap text-center">
+                                <span class="heading-small">EQUIPMENTS</span>
+                                <span class="heading-large"><img src="images/heading-icon.svg" alt="" class="heading-icon">医療機器</span>
+                            </h2>
+                            
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <figure class="text-center">
+                                <img src="images/electrocardiogram-integrated-pulse-wave-monitor.png" alt="心電計一体型脈波計">
+                                <figcaption>心電計一体型脈波計</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <figure class="text-center">
+                                <img src="images/holter-electrocardiogram.png" alt="ホルター心電図">
+                                <figcaption>ホルター心電図</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <figure class="text-center">
+                                <img src="images/echographic-examination.png" alt="エコー">
+                                <figcaption>エコー</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <figure class="text-center">
+                                <img src="images/pulmonary-function-test.png" alt="肺機能検査">
+                                <figcaption>肺機能検査</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <figure class="text-center">
+                                <img src="images/aed.png" alt="AED">
+                                <figcaption>AED</figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="standards">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
@@ -396,7 +403,7 @@
                                     </div>
                                     <div class="footer-btn-secondary">
                                         <a href="tel:0774416259">
-                                            <i class="fas fa-phone-alt me-2"></i>0774-41-6259
+                                            <i class="fas fa-phone-alt me-1"></i>0774-41-6259
                                         </a>
                                     </div>
                                 </div>
@@ -470,8 +477,10 @@
                                 <ul class="f-nav">
                                     <li><a href="index.html">ホーム</a></li>
                                     <li><a href="about.html">クリニックについて</a></li>
-                                    <li><a href="treatment.html">診療案内</a></li>
+                                    <li><a href="treatments.html">診療案内</a></li>
                                     <li><a href="access.html">診療時間・アクセス</a></li>
+                                    <li><a href="info.html">お知らせ</a></li>
+                                    <li><a href="howto-reserve.html">WEB予約方法</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -485,7 +494,7 @@
 
         <div id="sp-float">
             <div class="sp-float-btn-wrap">
-                <a href="tel:0774416259" class="sp-float-phone"><span class="sp-float-text"><i class="fas fa-phone-alt me-2"></i>0774-41-6259</span></a>
+                <a href="tel:0774416259" class="sp-float-phone"><span class="sp-float-text"><i class="fas fa-phone-alt me-1"></i>0774-41-6259</span></a>
                 <a href="https://junnavi.com/takenaka/" target="_blank" class="sp-float-web"><span class="sp-float-text"><i class="fas fa-calendar-alt me-2"></i>WEB予約</span></a>
             </div>
         </div>
@@ -495,25 +504,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     
     <script src="js/custom.js"></script>
-
-
-    <!-- <script>
-        
-        if(window.matchMedia('(min-width:769px)').matches) {
-        $(window).scroll(function(){
-            var posThis = $(this).scrollTop();
-            var posMain = $("main").offset();
-            var pos = $(".last").offset();
-            var posLast = pos.top - 500;
-            if (posThis > posMain.top && posThis < posLast) {
-            $(".sidebar-list").fadeIn();
-            }
-            else {
-            $(".sidebar-list").fadeOut();
-            }
-        })
-        };
-    </script> -->
 
 
 
